@@ -10,8 +10,8 @@ export class Medico {
     id: number
 
     @IsNotEmpty()
-    @MaxLength(8)
-    @Column({nullable: false, length: 8})
+    @MaxLength(13)
+    @Column({nullable: false, length: 13})
     crm: string
 
     @OneToMany(() => Postagem, (postagem) => postagem.medico)
